@@ -1,0 +1,23 @@
+{
+  "name": "off-canvas",
+  "version": "1.0.0",
+  "description": "Los paneles fuera del lienzo se colocan fuera de la ventana gráfica y se deslizan cuando se activan.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vargasmolina/off-canvas.git"
+  },
+  "keywords": [
+    "off-canvas",
+    "diplay:grid"
+  ],
+  "author": "Jose Vargas Molina",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/vargasmolina/off-canvas/issues"
+  },
+  "homepage": "https://github.com/vargasmolina/off-canvas#readme"
+}
