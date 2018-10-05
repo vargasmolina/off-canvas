@@ -1,2 +1,9 @@
 # arrea trabajo
 off-canvas.code-workspace
+
+# directorio
+/node_modules
+/dist
+
+#archivos
+package-lock.json
