@@ -33,6 +33,9 @@
     "gulp-uglify": "^3.0.1"
   },
   "devDependencies": {
-    "gulp-plumber": "^1.2.0"
+    "compass-mixins": "^0.12.10",
+    "gulp-plumber": "^1.2.0",
+    "normalize-scss": "^7.0.1",
+    "sass-rem": "^2.0.1"
   }
 }
