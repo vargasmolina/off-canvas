@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/vargasmolina/off-canvas#readme",
   "dependencies": {
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.0",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-changed": "^3.2.0",
