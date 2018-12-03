@@ -1,9 +1,12 @@
 $(document).ready(function () {
 
-    $("#OpenCanvas").click(function () {
+    function TCanvas() {
         // event.preventDefault();
-        // alert(this);
+        // alert( "clicked" );
         $('#canvas').toggleClass("open");
-    });
+    }
+
+    $("#OpenCanvas").on("click", TCanvas);
+    $("#CloseCanvas").on("click", TCanvas);
 
 });
