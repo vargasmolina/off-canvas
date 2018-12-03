@@ -3,69 +3,37 @@
 //font
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
+@import 'layout';
+
 html {
     @include rem-baseline;
 }
 
 body {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: minmax(rem(320px), 1fr);
-    grid-template-rows: max-content auto max-content;
-    justify-content: center;
     background-color: chocolate;
-    // font-size: rem(14px);
+    font-size: rem(16px);
     font-family: 'Lato', sans-serif;
-    overflow-y: scroll;
-    // align-items: start;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: minmax(rem(160px), rem(1280px));
-    justify-content: center;
-}
-
-%basico-layout {
-    z-index: 1;
-    grid-column: 1 / 2;
-
-    // grid-row: span 1;
-}
 
 #canvas {
-    z-index: 2;
-    grid-column: 1 / 2;
-    grid-row: 1 / 4;
-    background-color: aqua;
-    /**/
-    width: rem(160px);
-    @include translateX(-100%);
-    @include transition-duration(0.5s);
-    @include transition-timing-function(linear);
-    @include transparent;
 
-    &.open {
-        @include opaque;
-        @include translateX(0);
-    }
+    background-color: aqua;
+
 }
 
 #cabeza {
-    @extend %basico-layout;
-    grid-row: 1 / 2;
+
     background-color: yellow;
 }
 
 #cuerpo {
-    @extend %basico-layout;
-    grid-row: 2 / 3;
+
     background-color: green;
 }
 
 #pies {
-    @extend %basico-layout;
-    grid-row: 3 / 4;
+
     background-color: gray;
 }
 

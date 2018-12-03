@@ -1,0 +1,61 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(rem(320px), 1fr);
+    grid-template-rows: max-content auto max-content;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(rem(160px), rem(1280px));
+    justify-content: center;
+}
+
+%basico-layout {
+    z-index: 1;
+    grid-column: 1 / 2;
+}
+
+#canvas {
+    z-index: 2;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+
+    /**/
+    width: rem(160px);
+    @include translateX(-100%);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(linear);
+    @include transparent;
+
+    &.open {
+        @include opaque;
+        @include translateX(0);
+    }
+}
+
+#cabeza {
+    @extend %basico-layout;
+    grid-row: 1 / 2;
+}
+
+#cuerpo {
+    @extend %basico-layout;
+    grid-row: 2 / 3;
+}
+
+#pies {
+    @extend %basico-layout;
+    grid-row: 3 / 4;
+}
+
+
+// #OpenCanvas {
+//     display: none;
+
+//     @include screen(rem(320px), rem(640px)) {
+//         display: block;
+//     }
+// }
